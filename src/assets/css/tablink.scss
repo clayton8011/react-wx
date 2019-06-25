@@ -1,0 +1,41 @@
+@import "./mixin";
+body,html,
+#root,
+.App ,
+.App >div {
+  height: 100%;
+}
+
+.tab-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  @include h(98);
+  display: flex;
+  border-top: 1px solid #dddddd;
+}
+.tab-box a {
+  flex: 1;
+  @include fz(22);
+  color: #8a8c9a;
+  text-align: center;
+  //@include lh(98);
+}
+img {
+  display: block;
+}
+.tab-box a img{
+ @include wh(52,52);
+  margin: 0 auto;
+  @include mt(11);
+
+}
+.tab-content {
+  height: 100%;
+  @include padB(100);
+  //background: red;
+}
+.tab-box a .active{
+  color: #4b84f8;
+}

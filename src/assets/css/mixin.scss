@@ -1,0 +1,97 @@
+$bg:#fff;
+$textTC:#333;
+$textC:#666;
+$borderC:#ddd;
+$designW:750;
+@mixin fontSC($s,$c){
+  font-size: $s/$designW*16rem;
+  //color: #{$c};
+  color: $c;
+}
+@mixin wh($width, $height){
+  width: $width/$designW*16rem;
+  height: $height/$designW*16rem;
+}
+@mixin w($width){
+  width: $width/$designW*16rem;
+}
+@mixin h($height){
+  height: $height/$designW*16rem;
+}
+@mixin whc($width, $height){
+  width: $width/$designW*16rem;
+  height: $height/$designW*16rem;
+  margin: 0 auto;
+}
+@mixin lt($left,$top){
+  left:$left/$designW*16rem;
+  top:$top/$designW*16rem;
+}
+@mixin rt($right,$top){
+  right:$right/$designW*16rem;
+  top: $top/$designW*16rem;
+}
+@mixin lb($left,$bottom){
+  left:$left/$designW*16rem;
+  bottom: $bottom/$designW*16rem;
+}
+@mixin lBb($left,$bottom){
+  left:$left;
+  bottom: $bottom/$designW*16rem;
+}
+@mixin rb($right,$bottom){
+  right:$right/$designW*16rem;
+  bottom: $bottom/$designW*16rem;
+}
+@mixin mb($mb){
+  margin-bottom: $mb/$designW*16rem;
+}
+@mixin mt($mt){
+  margin-top: $mt/$designW*16rem;
+}
+@mixin ml($ml){
+  margin-left: $ml/$designW*16rem;
+}@mixin mr($mr){
+  margin-right:  $mr/$designW*16rem;
+}
+
+@mixin padAll($t,$r,$b,$l){
+  padding:$t/$designW*16rem $r/$designW*16rem $b/$designW*16rem $l/$designW*16rem;
+}
+@mixin pad($padt,$padl){
+  padding: $padt/$designW*16rem $padl/$designW*16rem;
+}
+@mixin padT($padt){
+  padding-top: $padt/$designW*16rem;
+}
+@mixin padL($padl){
+  padding-left: $padl/$designW*16rem;
+}
+@mixin padR($padr){
+  padding-left: $padr/$designW*16rem;
+}
+@mixin padB($padb){
+  padding-bottom: $padb/$designW*16rem;
+}
+@mixin trCen(){
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin tp($top){
+  top:$top/$designW*16rem;
+}
+@mixin bline($p,$cl){
+  border: $p+px solid $cl;
+}
+@mixin fz($fz){
+  font-size:$fz/$designW*16rem;
+}
+@mixin maxW($max){
+  max-width:$max/$designW*16rem ;
+}
+@mixin lh($lh){
+  line-height:$lh/$designW*16rem ;
+}
+@mixin br($br){
+  border-radius: $br/$designW*16rem;
+}
