@@ -10,25 +10,9 @@ function App() {
     <div className="App">
         <Router>
             {
-                RouterBox.map((val,key)=>{
+                RouterBox.map((val,key)=> {
                     if(val.exact){
-
-                        if(val.routes){
-                            return(
-                                <Router>
-                                    {
-                                        val.routes.map((val,key)=>{
-                                            return(
-                                                <Route  key={key} exact path={val.path} component={val.component} />
-                                            )
-                                        })
-                                    }
-
-                                </Router>
-                            )
-                        }else{
                             return(<Route  key={key} exact path={val.path} component={val.component} />)
-                        }
                     }else{
                         return(<Route  key={key} path={val.path} component={val.component} />)
                     }

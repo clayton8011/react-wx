@@ -12,35 +12,40 @@ import searchImg from '../assets/img/search.png'
 import searchImgAc from '../assets/img/search-ac.png'
 import myImg from '../assets/img/mine.png'
 import myImgAc from '../assets/img/mine-ac.png'
+import tabIndex from "./index-tab";
+import relCard from "./index-tab/rel-card";
+import nameCard from "./index-tab/name-card";
+import my from "./index-tab/my";
+import search from "./index-tab/search";
 
 const routes =[
     {
-        path: "/home",
-        // component:Home,
+        path: "/home/index",
+        component:tabIndex,
         title:"首页",
         img:index,
         acImg:indexAc
     },{
-        path: "/name-card",
-        // component:nameCard,
+        path: "/home/name-card",
+        component:nameCard,
         title:"名片夹",
         img:nameImg,
         acImg:nameImgAc
     },{
-        path: "/rel-card",
-        // component:relCard,
+        path: "/home/rel-card",
+        component:relCard,
         title:"发布名片",
         img:relImg,
         acImg:relImgAc
     },{
-        path: "/search",
-        // component:search,
+        path: "/home/search",
+        component:search,
         title:"查询",
         img:searchImg,
         acImg:searchImgAc
     },{
-        path: "/my",
-        // component:my,
+        path: "/home/my",
+        component:my,
         title:"我的",
         img:myImg,
         acImg:myImgAc

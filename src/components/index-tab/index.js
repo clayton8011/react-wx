@@ -31,10 +31,7 @@ export default class Home extends Component {
         render(){
             return(
                 <div>
-home
-                    {routes.map((route, i) => (
-                        {/*<RouteWithSubRoutes key={i} {...route} />*/}
-                    ))}
+                    index
                 </div>
             )
         }

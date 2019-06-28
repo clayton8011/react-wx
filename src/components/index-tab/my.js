@@ -11,7 +11,6 @@ export default class My extends Component {
         render(){
             return(
                 <div>my
-                    <TabLink url={this.props.location.pathname}></TabLink>
                 </div>
             )
         }

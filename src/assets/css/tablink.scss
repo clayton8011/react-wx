@@ -39,3 +39,7 @@ img {
 .tab-box a .active{
   color: #4b84f8;
 }
+.tab-index {
+  @include h(500);
+  background: #000;
+}
